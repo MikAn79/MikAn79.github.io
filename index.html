@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101b24" />
+    <meta
+      name="description"
+      content="Автоматизация промышленных котельных и пусконаладочные работы. Разработка ПО и SCADA, модернизация систем, шкафы управления и диагностика оборудования."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:title"
+      content="ТеплоКонтур — автоматизация и пусконаладка котельных"
+    />
+    <meta
+      property="og:description"
+      content="Автоматизация промышленных котельных, разработка ПО и SCADA, модернизация систем и пусконаладка оборудования."
+    />
+    <title>ТеплоКонтур — автоматизация и пусконаладка котельных</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="ТеплоКонтур — на главную">
+          <span class="brand__icon"
+            ><svg viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M20 3 36 12v16L20 37 4 28V12L20 3Z" />
+              <path
+                d="M12 25c0-4 4-4 4-8s-3-4-3-7M21 29c0-4 4-4 4-8s-3-4-3-7M29 25c0-4 3-4 3-7"
+              /></svg
+          ></span>
+          <span class="brand__name"
+            >ТЕПЛО<span>КОНТУР</span><small>ИНЖЕНЕРНЫЕ СИСТЕМЫ</small></span
+          >
+        </a>
+        <nav class="nav" id="nav" aria-label="Основная навигация">
+          <a href="#services">Услуги</a><a href="#solutions">Оборудование</a
+          ><a href="#workflow">Этапы работы</a><a href="#about">О компании</a
+          ><a href="#contacts">Контакты</a>
+        </nav>
+        <div class="header__right">
+          <a class="header__cta" href="#contacts"
+            >Обсудить задачу <span>↗</span></a
+          >
+        </div>
+        <button
+          class="menu-toggle"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+        <div class="container hero__content">
+          <div class="hero__copy">
+            <div class="eyebrow">
+              <span class="eyebrow__line"></span> АВТОМАТИЗАЦИЯ ПРОМЫШЛЕННЫХ
+              КОТЕЛЬНЫХ
+            </div>
+            <h1>Автоматика<br />и пусконаладка<br /><span>котельных</span></h1>
+            <p class="hero__lead">
+              Настраиваем системы управления котельными, разрабатываем ПО и
+              SCADA, модернизируем автоматику и запускаем оборудование на
+              объекте.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--orange" href="#contacts"
+                >Обсудить задачу <span>↗</span></a
+              ><a class="text-link" href="#services"
+                >Все услуги <span>↓</span></a
+              >
+            </div>
+            <div class="hero__note">
+              <span class="status-dot"></span> От обследования и проекта
+              <b>до наладки на объекте</b>
+            </div>
+          </div>
+          <div
+            class="hero__visual"
+            aria-label="Схематичное изображение системы управления котельной"
+          >
+            <div class="visual-top">
+              <span>СХЕМА УПРАВЛЕНИЯ / ПРИМЕР</span
+              ><span class="live"><i></i> ИНТЕРФЕЙС АСУ ТП</span>
+            </div>
+            <svg
+              class="plant"
+              viewBox="0 0 650 470"
+              role="img"
+              aria-label="Трубопроводы и котельное оборудование"
+            >
+              <defs>
+                <linearGradient id="vessel" x1="0" x2="1">
+                  <stop stop-color="#263946" />
+                  <stop offset=".5" stop-color="#384e5a" />
+                  <stop offset="1" stop-color="#1b2a34" />
+                </linearGradient>
+                <filter id="soft"><feGaussianBlur stdDeviation="15" /></filter>
+              </defs>
+              <circle
+                cx="385"
+                cy="240"
+                r="155"
+                fill="#f28140"
+                opacity=".08"
+                filter="url(#soft)"
+              />
+              <path
+                class="pipe"
+                d="M70 340h90v-95h100m-100 0v-85h110m110 170h115V150h85m-200 95h130"
+              />
+              <path
+                class="pipe pipe--dim"
+                d="M70 365h112v-55h70m120 0h78v85h105m-270-185v-60h55"
+              />
+              <path class="pipe pipe--accent" d="M180 245h65m110 0h50v-95" />
+              <g class="boiler">
+                <rect x="246" y="112" width="112" height="246" rx="50" />
+                <path d="M259 163h86M259 307h86" />
+                <ellipse cx="302" cy="112" rx="56" ry="12" />
+                <ellipse cx="302" cy="358" rx="56" ry="12" />
+                <rect x="274" y="178" width="57" height="112" rx="25" />
+                <path
+                  d="M287 270c-10-15 13-19 8-35m14 35c-10-15 13-19 8-35"
+                  class="flame"
+                />
+              </g>
+              <g class="pump">
+                <circle cx="180" cy="245" r="24" />
+                <path d="M170 233l20 12-20 12z" />
+              </g>
+              <g class="pump">
+                <circle cx="410" cy="245" r="24" />
+                <path d="M400 233l20 12-20 12z" />
+              </g>
+              <g class="sensor">
+                <circle cx="159" cy="160" r="7" />
+                <path d="M159 160v-28h-25" />
+                <circle cx="466" cy="150" r="7" />
+                <path d="M466 150h25" />
+                <circle cx="470" cy="340" r="7" />
+                <path d="M470 340v26h24" />
+              </g>
+              <g class="labels">
+                <text x="263" y="91">КОТЁЛ 01</text>
+                <text x="103" y="120">ТЕМПЕРАТУРА</text>
+                <text x="496" y="144">ПОДАЧА</text>
+                <text x="497" y="382">ОБРАТКА</text>
+                <text x="129" y="289">НАСОС 01</text>
+                <text x="386" y="289">НАСОС 02</text>
+              </g>
+              <g class="readout">
+                <rect x="47" y="55" width="118" height="47" rx="7" />
+                <text x="59" y="74">ТЕМП. ПОДАЧИ</text>
+                <text x="59" y="93" class="readout__value">
+                  82.4
+                  <tspan>°C</tspan>
+                </text>
+              </g>
+              <g class="readout">
+                <rect x="483" y="57" width="118" height="47" rx="7" />
+                <text x="495" y="76">ДАВЛЕНИЕ</text>
+                <text x="495" y="95" class="readout__value">
+                  3.2
+                  <tspan>бар</tspan>
+                </text>
+              </g>
+              <g class="controller">
+                <rect x="490" y="215" width="94" height="72" rx="8" />
+                <rect x="501" y="226" width="72" height="39" rx="3" />
+                <path
+                  d="M515 254v-11m11 11v-20m11 20v-14m11 14v-25"
+                  class="bars"
+                />
+                <circle cx="509" cy="275" r="3" />
+                <circle cx="522" cy="275" r="3" />
+                <text x="500" y="309">КОНТРОЛЛЕР</text>
+              </g>
+              <g class="flow">
+                <circle cx="180" cy="245" r="37" />
+                <circle cx="410" cy="245" r="37" />
+              </g>
+            </svg>
+            <div class="visual-bottom">
+              <span><b>АСУ ТП</b> котельной</span
+              ><span class="visual-bottom__right"
+                >УПРАВЛЕНИЕ <b>И КОНТРОЛЬ</b></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container hero__bottom">
+          <span>01 / 04</span>
+          <div class="progress"><i></i></div>
+          <span>ИНЖЕНЕРНЫЙ ПОДХОД. ПОНЯТНЫЙ РЕЗУЛЬТАТ.</span>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Направления работы">
+        <div class="container metrics__inner">
+          <div class="metric">
+            <strong>08</strong><span>НАПРАВЛЕНИЙ<br />ИНЖЕНЕРНЫХ УСЛУГ</span>
+          </div>
+          <div class="metric">
+            <strong>ПО</strong
+            ><span>РАЗРАБОТКА ПРОГРАММ<br />ДЛЯ АВТОМАТИКИ</span>
+          </div>
+          <div class="metric">
+            <strong>АСУ</strong><span>СИСТЕМЫ И ШКАФЫ<br />АВТОМАТИКИ</span>
+          </div>
+          <div class="metric metric--statement">
+            <span class="metric__mark">↗</span
+            ><span>ОТ ТЕХНИЧЕСКОЙ ЗАДАЧИ<br />ДО ПУСКОНАЛАДКИ</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow eyebrow--dark">
+                <span class="eyebrow__line"></span> НАПРАВЛЕНИЯ РАБОТЫ
+              </div>
+              <h2>
+                Инженерные услуги<br /><span>для промышленных объектов</span>
+              </h2>
+            </div>
+            <p>
+              Автоматизация котельных, разработка ПО и SCADA-систем, диагностика
+              оборудования и пусконаладка.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="service-card__num">01</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-safety-inspection.webp"
+                alt="Специалист в каске осматривает промышленный сосуд"
+                loading="lazy"
+              />
+              <h3>Экспертиза промышленной безопасности</h3>
+              <p>
+                Экспертиза промышленной безопасности технических устройств и
+                объектов.
+              </p>
+              <a
+                href="#contacts"
+                aria-label="Обсудить экспертизу промышленной безопасности"
+                >↗</a
+              >
+            </article>
+            <article class="service-card">
+              <span class="service-card__num">02</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-nondestructive-testing.webp"
+                alt="Специалист проводит ультразвуковой контроль сварного шва"
+                loading="lazy"
+              />
+              <h3>Дефектоскопия</h3>
+              <p>Диагностика и контроль состояния элементов оборудования.</p>
+              <a href="#contacts" aria-label="Обсудить дефектоскопию">↗</a>
+            </article>
+            <article class="service-card">
+              <span class="service-card__num">03</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-boiler-automation.webp"
+                alt="Промышленный котел и инженерные коммуникации котельной"
+                loading="lazy"
+              />
+              <h3>Автоматизация котельных</h3>
+              <p>
+                Изготовление и наладка промышленных систем автоматизации
+                котельных.
+              </p>
+              <a href="#contacts" aria-label="Обсудить автоматизацию котельной"
+                >↗</a
+              >
+            </article>
+            <article class="service-card">
+              <span class="service-card__num">04</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-commissioning.webp"
+                alt="Инженер настраивает панель управления котельной"
+                loading="lazy"
+              />
+              <h3>Пусконаладочные работы</h3>
+              <p>
+                Настройка и наладка оборудования систем автоматизации котельных.
+              </p>
+              <a href="#contacts" aria-label="Обсудить пусконаладочные работы"
+                >↗</a
+              >
+            </article>
+            <article class="service-card">
+              <span class="service-card__num">05</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-modernization.webp"
+                alt="Специалист обновляет компоненты шкафа автоматики"
+                loading="lazy"
+              />
+              <h3>Модернизация систем</h3>
+              <p>Модернизация существующих систем автоматизации.</p>
+              <a href="#contacts" aria-label="Обсудить модернизацию систем"
+                >↗</a
+              >
+            </article>
+            <article class="service-card">
+              <span class="service-card__num">06</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-software.webp"
+                alt="Инженер работает с программой управления на ноутбуке рядом с ПЛК"
+                loading="lazy"
+              />
+              <h3>Разработка программного обеспечения</h3>
+              <p>
+                Программное обеспечение для промышленных систем автоматизации.
+              </p>
+              <a
+                href="#contacts"
+                aria-label="Обсудить разработку программного обеспечения"
+                >↗</a
+              >
+            </article>
+            <article class="service-card">
+              <span class="service-card__num">07</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-scada.webp"
+                alt="Оператор наблюдает за мнемосхемой и графиками в SCADA"
+                loading="lazy"
+              />
+              <h3>Разработка и настройка SCADA-систем</h3>
+              <p>Разработка и настройка SCADA-систем для котельных.</p>
+              <a href="#projects" aria-label="Примеры SCADA-систем">↗</a>
+            </article>
+            <article class="service-card">
+              <span class="service-card__num">08</span
+              ><img
+                class="service-card__image"
+                src="Материалы/услуги/service-control-cabinet.webp"
+                alt="Собранный шкаф управления с ПЛК и аккуратно уложенной проводкой"
+                loading="lazy"
+              />
+              <h3>Шкафы автоматики под ключ</h3>
+              <p>Изготовление шкафов автоматики под ключ.</p>
+              <a href="#projects" aria-label="Фото шкафов автоматики">↗</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow eyebrow--dark">
+                <span class="eyebrow__line"></span> ПРАКТИКА И РЕЗУЛЬТАТ
+              </div>
+              <h2>Наши последние<br /><span>работы</span></h2>
+            </div>
+            <p id="projectDescription">
+              Примеры работ по автоматизации, диспетчеризации и наладке
+              оборудования на промышленных объектах. Объект Кировский сахарный
+              завод. п. Балбык-Би РК
+            </p>
+          </div>
+          <div class="project-grid" id="lastWorkGallery">
+            <figure class="project-card">
+              <img
+                src="last_work/01.jpg"
+                alt="Фото выполненной работы 1"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>РАБОТА 01</span
+                ><b class="project-card__caption"
+                  >Мнемосхема системы управления котельной</b
+                >
+              </figcaption>
+            </figure>
+            <figure class="project-card">
+              <img
+                src="last_work/02.jpg"
+                alt="Фото выполненной работы 2"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>РАБОТА 02</span
+                ><b class="project-card__caption"
+                  >Интерфейс оператора и параметры системы</b
+                >
+              </figcaption>
+            </figure>
+            <figure class="project-card">
+              <img
+                src="last_work/03.jpg"
+                alt="Фото выполненной работы 3"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>РАБОТА 03</span
+                ><b class="project-card__caption"
+                  >Панель управления котельным оборудованием</b
+                >
+              </figcaption>
+            </figure>
+            <figure class="project-card">
+              <img
+                src="last_work/04.jpg"
+                alt="Фото выполненной работы 4"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>РАБОТА 04</span
+                ><b class="project-card__caption"
+                  >Шкафы автоматики и инженерные коммуникации</b
+                >
+              </figcaption>
+            </figure>
+            <figure class="project-card">
+              <img
+                src="last_work/05.jpg"
+                alt="Фото выполненной работы 5"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>РАБОТА 05</span
+                ><b class="project-card__caption"
+                  >Насосы и трубопроводная обвязка</b
+                >
+              </figcaption>
+            </figure>
+            <figure class="project-card">
+              <img
+                src="last_work/06.jpg"
+                alt="Фото выполненной работы 6"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>РАБОТА 06</span
+                ><b class="project-card__caption"
+                  >Узлы и арматура промышленной котельной</b
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions" id="solutions">
+        <div class="container solutions__inner">
+          <div class="solutions__copy">
+            <div class="eyebrow">
+              <span class="eyebrow__line"></span> АВТОМАТИЗАЦИЯ И ПРОГРАММНОЕ
+              ОБЕСПЕЧЕНИЕ
+            </div>
+            <h2>
+              Система управления<br /><span>под задачи</span><br />котельной
+            </h2>
+            <p>
+              Разрабатываем программное обеспечение и SCADA, изготавливаем шкафы
+              автоматики и выполняем наладку промышленных систем.
+            </p>
+            <ul class="check-list">
+              <li><span>✓</span> Изготовление шкафов автоматики под ключ</li>
+              <li><span>✓</span> Разработка и настройка SCADA-систем</li>
+              <li>
+                <span>✓</span> Пусконаладка и модернизация существующих систем
+              </li>
+            </ul>
+            <a href="#contacts" class="button button--outline"
+              >Обсудить систему <span>↗</span></a
+            >
+          </div>
+          <div class="cabinet-wrap">
+            <div class="cabinet-card">
+              <div class="cabinet-card__head">
+                <span>ЩИТ УПРАВЛЕНИЯ</span><span>ТК — 04.02</span>
+              </div>
+              <div class="cabinet">
+                <div class="cabinet__rail"></div>
+                <div class="module module--wide">
+                  <i></i><i></i><i></i><i></i><b>PLC</b>
+                </div>
+                <div class="module"><i></i><i></i><i></i><i></i></div>
+                <div class="module"><i></i><i></i><i></i><i></i></div>
+                <div class="module module--dark">
+                  <i></i><i></i><i></i><i></i><b>24V</b>
+                </div>
+                <div class="module module--dark">
+                  <i></i><i></i><i></i><i></i>
+                </div>
+                <div class="breaker-row">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="terminal-row">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                  ><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <div class="cabinet__wire cabinet__wire--one"></div>
+                <div class="cabinet__wire cabinet__wire--two"></div>
+                <div class="cabinet__wire cabinet__wire--three"></div>
+                <span class="cabinet__led"></span>
+              </div>
+              <div class="cabinet-card__foot">
+                <span><i></i> ПРОВЕРЕН НА СТЕНДЕ</span
+                ><span>ГОТОВ К РАБОТЕ</span>
+              </div>
+            </div>
+            <div class="float-tag">
+              <span class="float-tag__icon">✳</span
+              ><span>Каждый шкаф<br /><b>собираем и тестируем</b></span>
+            </div>
+            <div class="circuit circuit--one"></div>
+            <div class="circuit circuit--two"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow eyebrow--dark">
+                <span class="eyebrow__line"></span> ПОНЯТНЫЙ ПОРЯДОК РАБОТ
+              </div>
+              <h2>От задачи<br /><span>до запуска системы</span></h2>
+            </div>
+            <p>
+              Согласуем состав работ и исходные данные до начала проекта. На
+              каждом этапе понятно, что делаем и какой результат передаем.
+            </p>
+          </div>
+          <div class="workflow-grid">
+            <article>
+              <span>01</span>
+              <h3>Обследуем объект</h3>
+              <p>
+                Изучаем оборудование, текущую автоматику и требования к
+                технологическому процессу.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Согласуем решение</h3>
+              <p>
+                Определяем объем работ, состав системы, этапы и необходимые
+                исходные данные.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Разрабатываем и собираем</h3>
+              <p>
+                Готовим ПО и SCADA, комплектуем и собираем шкафы управления по
+                согласованному заданию.
+              </p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Проводим наладку</h3>
+              <p>
+                Проверяем работу оборудования и автоматики на объекте, передаем
+                результаты и документацию по составу проекта.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about__inner">
+          <div class="about__stamp">
+            <span>ТК</span><small>ТЕПЛО<br />КОНТУР<br />АВТОМАТИЗАЦИЯ</small
+            ><b>ИНЖЕНЕРНЫЕ СИСТЕМЫ</b>
+          </div>
+          <div class="about__content">
+            <div class="eyebrow eyebrow--dark">
+              <span class="eyebrow__line"></span> ИНЖЕНЕРНЫЙ ПОДХОД
+            </div>
+            <h2>Решение под<br /><span>задачу объекта</span></h2>
+            <p>
+              Работаем с промышленной автоматизацией котельных: от обследования
+              и проектирования решения до программирования, сборки шкафов и
+              пусконаладки. Состав работ, применяемое оборудование и комплект
+              передаваемой документации согласуем до старта.
+            </p>
+            <a class="text-link text-link--dark" href="#services"
+              >Посмотреть все направления <span>↗</span></a
+            >
+          </div>
+          <div class="about__aside">
+            <div class="aside-number">АСУ<span>/</span>ТП</div>
+            <p>
+              Автоматика, программное обеспечение и интерфейсы оператора в
+              едином проекте.
+            </p>
+            <div class="aside-rule"></div>
+            <p>
+              Модернизация действующих систем с учетом оборудования и условий
+              эксплуатации.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contacts">
+        <div class="container contact__inner">
+          <div class="contact__copy">
+            <div class="eyebrow">
+              <span class="eyebrow__line"></span> СВЯЗАТЬСЯ ПО ПРОЕКТУ
+            </div>
+            <h2>Обсудим<br /><span>задачу?</span></h2>
+            <p>
+              Расскажите, что нужно автоматизировать или наладить. Обсудим
+              исходные данные, объем работ и следующий шаг.
+            </p>
+            <div class="contact__details">
+              <a href="#services"
+                ><span>ОСНОВНЫЕ ЗАДАЧИ</span>Автоматизация и ПНР</a
+              ><a href="mailto:mikan979@gmail.com"
+                ><span>ЭЛЕКТРОННАЯ ПОЧТА</span>mikan979@gmail.com</a
+              >
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-title">
+              Расскажите о проекте <span>01 — 04</span>
+            </div>
+            <label
+              >Ваше имя<input
+                name="name"
+                type="text"
+                placeholder="Как к вам обращаться"
+                autocomplete="name"
+                required /></label
+            ><label
+              >Электронная почта<input
+                name="email"
+                type="email"
+                placeholder="name@example.com"
+                autocomplete="email"
+                required /></label
+            ><label
+              >Телефон <span class="optional">необязательно</span
+              ><input
+                name="phone"
+                type="tel"
+                placeholder="+7 (___) ___-__-__"
+                autocomplete="tel" /></label
+            ><label
+              >Чем можем помочь?<textarea
+                name="message"
+                rows="3"
+                placeholder="Услуга, объект или задача"
+              ></textarea>
+            </label>
+            <div class="form-bottom">
+              <button class="button button--orange" type="submit">
+                Открыть письмо <span>↗</span></button
+              ><small
+                >Откроется почтовое приложение<br />с заполненной
+                заявкой.</small
+              >
+            </div>
+            <p class="form-success" id="formSuccess" role="status">
+              Проверьте черновик и нажмите «Отправить» в почтовом приложении.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="brand brand--footer" href="#top"
+          ><span class="brand__icon"
+            ><svg viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M20 3 36 12v16L20 37 4 28V12L20 3Z" />
+              <path
+                d="M12 25c0-4 4-4 4-8s-3-4-3-7M21 29c0-4 4-4 4-8s-3-4-3-7M29 25c0-4 3-4 3-7"
+              /></svg></span
+          ><span class="brand__name"
+            >ТЕПЛО<span>КОНТУР</span><small>ИНЖЕНЕРНЫЕ СИСТЕМЫ</small></span
+          ></a
+        ><span>Автоматизация промышленных котельных</span
+        ><a href="#top">Вернуться наверх ↑</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
